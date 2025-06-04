@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --font-primary: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer components{
+    img{
+        user-select: none;
+        pointer-events: none;
+    }
+
+    li{
+        list-style: none;
+    }
+}
+@layer utilities{
+    .nav_links{
+        @apply text-emerald-950 text-base font-normal leading-normal transition duration-200 ease-in hover:text-red-500;
+    }
+  }
